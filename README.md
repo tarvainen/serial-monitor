@@ -56,6 +56,8 @@ Using the `monitor` command allows you to listen messages from the serial port
 and also to write your own message back there. Since now all messages are separated
 by newline character and all the data is handled as basic strings.
 
+You may exit the monitoring console by pressing 'esc' or 'ctrl + c'.
+
 ## TODO
 * Allow using custom parser
 * Allow writing raw bytes in some way
