@@ -1,0 +1,31 @@
+{
+  "name": "serial-monitor",
+  "version": "1.0.0",
+  "description": "Simple serial port monitoring tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules\\.bin\\tsc && node dist/serial-monitor.js"
+  },
+  "bin": {
+    "serial-monitor": "dist/serial-monitor.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "serial"
+  ],
+  "author": "Atte Tarvainen",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/blessed": "^0.1.4",
+    "@types/commander": "^2.3.31",
+    "@types/serialport": "^4.0.7",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "commander": "^2.9.0",
+    "serialport": "^4.0.7",
+    "term.js": "0.0.7"
+  }
+}
