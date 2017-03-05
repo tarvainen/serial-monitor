@@ -48,7 +48,7 @@ screen.key(['escape', 'q', 'C-c'], () => {
   return process.exit(0);
 });
 
-input.key(['escape', 'q', 'C-c'], () => {
+input.key(['escape', 'C-c'], () => {
   return process.exit(0);
 });
 
