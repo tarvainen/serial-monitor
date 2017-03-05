@@ -20,8 +20,10 @@ Run `serial-monitor list`
 
 Output:
 
+```
 [0] PORT: COM3 | MAN: Some Manufacturer | SN: 1231213
 [1] PORT: COM6 | MAN: Some Manufacturer | SN: 1234512
+```
 
 ### Communication to some port
 
@@ -50,3 +52,11 @@ Output:
 [1488725567325] rok!
 ```
 
+Using the `monitor` command allows you to listen messages from the serial port
+and also to write your own message back there. Since now all messages are separated
+by newline character and all the data is handled as basic strings.
+
+## TODO
+* Allow using custom parser
+* Allow writing raw bytes in some way
+* Allow reading raw buffers
