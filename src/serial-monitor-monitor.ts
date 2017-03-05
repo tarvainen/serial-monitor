@@ -55,6 +55,7 @@ input.key(['escape', 'C-c'], () => {
 input.on('submit', () => {
   const text = input.getText();
   input.clearValue();
+  serial.write(text);
   onDataWritten(text);
 });
 
@@ -66,6 +67,7 @@ serial.on('data', (data) => {
   onDataReceived(data.toString());
 });
 
+serial.on('open', () => onDataReceived(`Connection successfully opened to port ${commander.port}`));
 serial.on('disconnect', () => process.exit(0));
 serial.on('close', () => process.exit(0));
 serial.on('error', (err) => onError(err));
